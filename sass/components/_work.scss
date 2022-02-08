@@ -1,0 +1,12 @@
+
+.work__container{
+    @extend %container;
+}
+
+.work__list{
+    display: flex;
+    .work__item:not(:last-child){
+        margin-right: 30px;
+    }
+}
+

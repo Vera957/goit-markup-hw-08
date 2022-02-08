@@ -1,0 +1,57 @@
+/** @format */
+
+@import "../common/commonStyles";
+
+.advantages__container {
+  @extend %container;
+}
+
+.section--paddingBottom__kill{
+  padding-bottom: 0;
+}
+
+.advantage__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.advantage__icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $second-bg-color;
+  margin-bottom: 30px;
+}
+
+.advantage__heading {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.advantage__list {
+  display: flex;
+  padding-left: 0;
+}
+
+.advantage__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.advantage__discription {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $main-text-color;
+}
+.advantage--visually-hidden{
+  @extend %visually-hidden;
+}
