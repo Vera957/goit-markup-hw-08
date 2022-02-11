@@ -27,10 +27,16 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="./index.html" class="logo__link"
+        <a href="./index.html" class="header__logoLink"
           ><span class="header__logo">Web</span
-          ><span class="logo--blacker header__logo">Studio</span></a
+          ><span class="header__logo header__logo--black">Studio</span></a
         >
+        <button type="button" class="header__btn">
+          <svg class="header__menuIcon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+
         <nav class="header__nav">
           <ul class="header__navList">
             <li class="header__item">
@@ -133,7 +139,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section__work">
         <div class="work__container">
           <h2 class="section__heading">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -170,7 +176,7 @@
           <h2 class="section__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__member">
-              <img src="./images/memberone.jpg" width="270" alt="Игорек" />
+              <img src="./images/memberone.jpg" alt="Игорек" class="team__img"/>
               <div class="team__card">
                 <h3 class="team__heading">Игорь Демьяненко</h3>
                 <p class="team__discription">Product Designer</p>
@@ -207,7 +213,7 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="./images/membertwo.jpg" width="270" alt="Игорек" />
+              <img src="./images/membertwo.jpg" class="team__img" alt="Игорек" />
               <div class="team__card">
                 <h3 class="team__heading">Ольга Репина</h3>
                 <p class="team__discription">Frontend Developer</p>
@@ -244,7 +250,7 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="./images/memberthree.jpg" width="270" alt="Игорек" />
+              <img src="./images/memberthree.jpg" class="team__img" alt="Игорек" />
               <div class="team__card">
                 <h3 class="team__heading">Николай Тарасов</h3>
                 <p class="team__discription">Marketing</p>
@@ -281,7 +287,7 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="./images/memberfour.jpg" width="270" alt="Игорек" />
+              <img src="./images/memberfour.jpg" class="team__img" alt="Игорек" />
               <div class="team__card">
                 <h3 class="team__heading">Михаил Ермаков</h3>
                 <p class="team__discription">UI Designer</p>
@@ -467,7 +473,7 @@
     <footer class="footer footer--dark-topic">
       <div class="footer__container">
         <div class="footer__contacts">
-          <a href="" class="logo"
+          <a href="" class="footer__logoLink"
             ><span class="footer__logo">Web</span
             ><span class="footer__logo footer__logo--whitener">Studio</span></a
           >

@@ -1,12 +1,3 @@
-
-.work__container{
-    @extend %container;
+.section__work{
+    display: none;
 }
-
-.work__list{
-    display: flex;
-    .work__item:not(:last-child){
-        margin-right: 30px;
-    }
-}
-

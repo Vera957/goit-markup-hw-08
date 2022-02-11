@@ -1,5 +1,5 @@
 @import "./utilits/variables";
-@import "./common/_commonStyles.scss/";
+@import "./common/commonStyles";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/advantages";
@@ -8,4 +8,4 @@
 @import "./components/clients";
 @import "./components/footer";
 @import "./components/modal";
-@import "./components/_portfolio.scss/";
+@import "./components/portfolio";

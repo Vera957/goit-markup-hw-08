@@ -1,104 +1,50 @@
 /** @format */
 
-%header-font {
-  font-family: $main-font-family;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-}
-
 .header__container {
-  @extend %container;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
-}
-
-.header__item {
-  display: flex;
-  padding: 0;
-
-  &:not(:last-child) {
-    margin-right: 50px;
-    position: relative;
-  }
-}
-
-.header__navLink {
-  @extend %header-font;
-  color: black;
-  transition: color 250ms $time-graf;
-
-  &:focus,
-  &:hover {
-    color: $optional-color;
-  }
-}
-
-.active-link {
-  color: $optional-color;
-  transition: transform 250ms $time-graf;
-
-  &::after {
-    transform: translateY(28px);
-    position: absolute;
-    width: inherit;
-    display: block;
-    width: 100%;
-    content: "";
-    height: 4px;
-    background-color: $optional-color;
-    border-radius: 2px;
-  }
-}
-
-.header__contacts {
-  display: flex;
   margin-left: auto;
-  padding: 0;
+  margin-right: auto;
+  padding-left: 16px;
+
+  width: 480px;
+  height: 60px;
+
+  outline: auto;
 }
 
-.header__contact:not(:last-child) {
-  margin-right: 30px;
-}
+.header__logoLink {
+  @extend .logo;
 
-.header {
-  border-bottom: 1px solid #ececec;
-  display: flex;
-}
-
-.logo__link {
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.header__logo {
-  @extend %logo;
-  &.logo--blacker {
+  .header__logo--black {
     color: black;
   }
-}
 
-.header__navList {
-  display: flex;
-}
-
-.header__link {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  transition: color 250ms $time-graf;
-
-  color: rgba(117, 117, 117, 1);
-  @extend %header-font;
-
-  &:hover,
-  &:focus {
-    color: $optional-color;
+  .header__nav {
+    display: none;
   }
-}
 
-.header__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  .header__contacts {
+    display: none;
+  }
+
+  .header__btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 24px;
+    display: block;
+  }
+
+  .header__menuIcon {
+    fill: black;
+
+    .header__btn:hover &,
+    .header__btn:focus & {
+      fill: $optional-color;
+    }
+  }
 }
