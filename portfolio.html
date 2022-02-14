@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
     <link href="css/modern-normalize.css" rel="stylesheet" />
     <link href="./css/main.min.css" rel="stylesheet" />
     <link href="./css/style-portfolio.css" rel="stylesheet" />
@@ -25,15 +28,20 @@
           ><span class="header__logo">Web</span
           ><span class="logo--blacker header__logo">Studio</span></a
         >
+        <button type="button" class="header__btnMenu">
+          <svg class="header__menu" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <ul class="header__navList">
             <li class="header__item">
-              <a class="header__navLink" href="./index.html"
+              <a class="header__navLink active-link" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="header__item">
-              <a class="header__navLink active-link" href="./portfolio.html">Портфолио</a>
+              <a class="header__navLink" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header__item">
               <a class="header__navLink" href="">Контакты</a>
@@ -88,7 +96,7 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/technocryak.jpg"
+                    src="./sass/images/mob-port1.jpg"
                     alt="красивый сайт технокряка"
                     class="portfolio__img"
                   />
@@ -108,8 +116,9 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/poster.jpg"
+                    src="./sass/images/mob-port2.jpg"
                     alt="баскетболисты дерутся за мячик"
+                    class="portfolio__img"
                   />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
@@ -118,9 +127,7 @@
                   </p>
                 </div>
                 <div class="workDiscription__container">
-                  <h2 class="works__heading">
-                    New Orlean vs Golden Star
-                  </h2>
+                  <h2 class="works__heading">New Orlean vs Golden Star</h2>
                   <p class="works__discrition">Дизайн</p>
                 </div>
               </a>
@@ -128,7 +135,11 @@
             <li class="workList__examples">
               <a class="workList__link" href="">
                 <div class="works__introducing">
-                  <img src="./images/rest.jpg" alt="нарисованная рыба" />
+                  <img
+                    src="./sass/images/mob-port3.jpg"
+                    class="portfolio__img"
+                    alt="нарисованная рыба"
+                  />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -144,7 +155,11 @@
             <li class="workList__examples">
               <a class="workList__link" href="">
                 <div class="works__introducing">
-                  <img src="./images/prime.jpg" alt="наушники" />
+                  <img
+                    src="./sass/images/mob-port4.jpg"
+                    alt="наушники"
+                    class="portfolio__img"
+                  />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -160,7 +175,11 @@
             <li class="workList__examples">
               <a class="workList__link" href="">
                 <div class="works__introducing">
-                  <img src="./images/boxes.jpg" alt="коробочки" />
+                  <img
+                    src="./sass/images/mob-port5.jpg"
+                    alt="коробочки"
+                    class="portfolio__img"
+                  />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -177,8 +196,9 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/inspiration.jpg"
+                    src="./sass/images/mob-port6.jpg"
                     alt="монитор с темным дизайном на экране"
+                    class="portfolio__img"
                   />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
@@ -187,9 +207,7 @@
                   </p>
                 </div>
                 <div class="workDiscription__container">
-                  <h2 class="works__heading">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="works__heading">Inspiration has no Borders</h2>
                   <p class="works__discrition">Веб-сайт</p>
                 </div>
               </a>
@@ -198,8 +216,9 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/limited.jpg"
+                    src="./sass/images/mob-port7.jpg"
                     alt="разворот шикарного журнала"
+                    class="portfolio__img"
                   />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
@@ -208,9 +227,7 @@
                   </p>
                 </div>
                 <div class="workDiscription__container">
-                  <h2 class="works__heading">
-                    Издание Limited Edition
-                  </h2>
+                  <h2 class="works__heading">Издание Limited Edition</h2>
                   <p class="works__discrition">Дизайн</p>
                 </div>
               </a>
@@ -219,8 +236,9 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/lab.jpg"
+                    src="./sass/images/mob-port8.jpg"
                     alt="бирка на нитке из натуральных материалов"
+                    class="portfolio__img"
                   />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
@@ -238,8 +256,9 @@
               <a class="workList__link" href="">
                 <div class="works__introducing">
                   <img
-                    src="./images/growing.jpg"
+                    src="./sass/images/mob-port9.jpg"
                     alt="успешный бизнесмен за ноутбуком"
+                    class="portfolio__img"
                   />
                   <p class="is-hiden-p">
                     Технокряк это современная площадка распространения
@@ -261,23 +280,21 @@
     <footer class="footer footer--dark-topic">
       <div class="footer__container">
         <div class="footer__contacts">
-          <a href="" class="logo"
+          <a href="" class="logo__link"
             ><span class="footer__logo">Web</span
             ><span class="footer__logo footer__logo--whitener">Studio</span></a
           >
-          <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
           <ul class="footer__list">
             <li class="footer__item">
-              <a
-                class="footer__link"
-                href="mailto:info@example.com"
+              <a class="footer__link" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li class="footer__item">
-              <a
-                class="footer__link"
-                href="tel:+380991111111"
+              <a class="footer__link" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
