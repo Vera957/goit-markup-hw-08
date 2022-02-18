@@ -10,6 +10,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   color: black;
 }
 .header__logo {
+  @extend .logo__link;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 0px;
   }
@@ -19,7 +20,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__container {
-  outline: auto;
   @extend .container;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     height: 60px;
@@ -223,11 +223,13 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.02em;
   color: #212121;
   font-weight: 500;
+  position: relative;
   &:hover,
   &:focus {
     color: #2196f3;
     transition: color 250ms $cubic;
   }
+
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
     font-size: 40px;
@@ -237,6 +239,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     width: 768px;
     font-size: 14px;
     line-height: calc(16 / 14);
+    padding-bottom: 32px;
   }
 }
 
@@ -275,6 +278,17 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2196f3;
   }
 }
-.active-link{
+.active-link {
   color: #2196f3;
+}
+
+.header__navLink.active-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
 }

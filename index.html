@@ -20,8 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/main.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/main.min.css" type="text/css"/>
   </head>
 
   <body>
@@ -88,14 +88,14 @@
         <h1 class="hero__heading">
           Эффективные решения<br />для вашего бизнеса
         </h1>
-        <button class="hero__btn" type="button" data-modal-open>
+        <button class="hero__btn" type="button" data-modal-open2>
           Заказать услугу
         </button>
       </section>
 
-      <section class="section section--paddingBottom__kill">
+      <section class="section section--paddingBottomKill">
         <div class="advantages__container">
-          <h2 class="advantage--visually-hidden">Примущества</h2>
+          <h2 class="advantage__hide">Примущества</h2>
           <ul class="advantage__list">
             <li class="advantage__item">
               <div class="advantage__icon">
@@ -159,7 +159,10 @@
                   src="./images/doingone.jpg"
                   width="370"
                   alt="набирает на клавиатуре"
-              /></a>
+                  class="work__img"
+              />
+              <span class="work__discription">Десктопные приложения</span>
+            </a>
             </li>
             <li class="work__item">
               <a href="" class="work__link"
@@ -167,7 +170,10 @@
                   src="./images/doingtwo.jpg"
                   width="370"
                   alt="тестит на смартфоне"
-              /></a>
+                  class="work__img"
+              />
+              <span class="work__discription">Мобильные приложения</span>
+            </a>
             </li>
             <li class="work__item">
               <a href="" class="work__link"
@@ -175,7 +181,9 @@
                   src="./images/doingthree.jpg"
                   width="370"
                   alt="цвета рассматривает"
-              /></a>
+                  class="work__img"
+              /><span class="work__discription">Дизайнерские решения</span>
+            </a>
             </li>
           </ul>
         </div>
@@ -403,9 +411,9 @@
         </div>
       </section>
 
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden2" data-modal2>
         <div class="modal">
-          <button class="modal__btn" data-modal-close type="button">
+          <button class="modal__btn" data-modal-close2 type="button">
             <svg class="modal__close">
               <use href="./images/icons.svg#icon-modal-x"></use>
             </svg>
@@ -419,6 +427,7 @@
             <ul class="modal__list">
               <li class="modal__item">
                 <label for="name" class="modal__label"> <span>Имя</span></label>
+                <span class="modal__svg-position">
                 <input
                   type="text"
                   id="name"
@@ -429,11 +438,13 @@
                 <svg width="12" height="12" class="modal__svg">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
+                </span>
               </li>
               <li class="modal__item">
                 <label for="tel" class="modal__label">
                   <span>Телефон</span></label
                 >
+                <span class="modal__svg-position">
                 <input
                   type="tel"
                   id="tel"
@@ -444,11 +455,13 @@
                 <svg width="13" height="13" class="modal__svg">
                   <use href="./images/icons.svg#icon-tel"></use>
                 </svg>
+                </span>
               </li>
               <li class="modal__item">
                 <label for="mail" class="modal__label"
                   ><span>Почта</span></label
                 >
+                <span class="modal__svg-position">
                 <input
                   type="email"
                   id="mail"
@@ -459,6 +472,7 @@
                 <svg width="15" height="12" class="modal__svg">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
+                </span>
               </li>
             </ul>
 
@@ -481,7 +495,7 @@
                   <use href="./images/icons.svg#icon-full-check-1"></use>
                 </svg>
                 <span class="modal__agreemantLabel"
-                  >Соглашаюсь с рассылкой и принимаю
+                  >Соглашаюсь с рассылкой и принимаю 
                 </span>
                 <a href="" class="modal__file" tabindex="0" target="_blank"
                   >Условия договора</a
@@ -500,8 +514,7 @@
       <div class="footer__container">
         <div class="footer__contacts">
           <a href="" class="logo__link"
-            ><span class="footer__logo">Web</span
-            ><span class="footer__logo footer__logo--whitener">Studio</span></a
+            >Web<span class="footer__logo--whitener">Studio</span></a
           >
           <address class="footer__address">
             г. Киев, пр-т Леси Украинки, 26
