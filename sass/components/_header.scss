@@ -64,7 +64,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 .header__nav_and_contacts {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
-    height: 100vh;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -72,13 +71,16 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     background: white;
     padding: 48px 40px;
     outline: auto;
+    height: 796px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
     display: flex;
     flex-direction: column;
     transition: transform 250ms $cubic;
-        &.is-hidden, &.is-hidden3 {
-      transform: translateY(-100vh);
+        &.is-hidden {
+      transform: translateY(-796px);
+      height: 100vh;
+
     }
   }
   @media screen and (min-width: 768px)  {

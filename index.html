@@ -154,19 +154,21 @@
           <h2 class="section__heading">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <a href="" class="work__link"
-                ><img
-                  src="./images/doingone.jpg"
-                  width="370"
-                  alt="набирает на клавиатуре"
-                  class="work__img"
-              />
+              <a href="" class="work__link">
+                  <img
+                    srcset="./images/w1.jpg 1x, ./images/w1@2x.jpg 2x"
+                    src="./images/doingone.jpg"
+                    width="370"
+                    alt="набирает на клавиатуре"
+                    class="work__img"
+                    type=""/>
               <span class="work__discription">Десктопные приложения</span>
             </a>
             </li>
             <li class="work__item">
               <a href="" class="work__link"
                 ><img
+                  srcset="./images/w2.jpg 1x, ./images/w2@2x.jpg 2x"
                   src="./images/doingtwo.jpg"
                   width="370"
                   alt="тестит на смартфоне"
@@ -178,6 +180,7 @@
             <li class="work__item">
               <a href="" class="work__link"
                 ><img
+                  srcset="./images/w3.jpg 1x, ./images/w3@2x.jpg 2x"
                   src="./images/doingthree.jpg"
                   width="370"
                   alt="цвета рассматривает"
@@ -194,11 +197,24 @@
           <h2 class="section__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__member">
-              <img
-                src="./sass/images/mob-member1.jpg"
-                alt="Игорек"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="./images/team1d.jpg 1x, ./images/team1d@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="270px"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team1t.jpg 1x, ./images/team1t@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="354px"
+                media="(min-width: 768px) and (max-width: 1199px)"/>
+                <source srcset="./images/team1m.jpg 1x, ./images/team1m@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="450px"
+                media="(min-width: 480px)"/>                
+                <img
+                  src="./sass/images/mob-member1.jpg"
+                  alt="Игорек"
+                  class="team__img"/>
+              </picture>
               <div class="team__card">
                 <h3 class="team__heading">Игорь Демьяненко</h3>
                 <p class="team__discription">Product Designer</p>
@@ -235,11 +251,25 @@
               </div>
             </li>
             <li class="team__member">
-              <img
+            <picture>
+                <source srcset="./images/team2d.jpg 1x, ./images/team2d@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="270px"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team2t.jpg 1x, ./images/team2t@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="354px"
+                media="(min-width: 768px) and (max-width: 1199px)"/>
+                <source srcset="./images/team2m.jpg 1x, ./images/team2m@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="450px"
+                media="(min-width: 480px)"/>                  
+                <img
                 src="./sass/images/mob-member2.jpg"
                 alt="Игорек"
                 class="team__img"
-              />
+                />
+            </picture>
               <div class="team__card">
                 <h3 class="team__heading">Ольга Репина</h3>
                 <p class="team__discription">Frontend Developer</p>
@@ -276,11 +306,25 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                src="./sass/images/mob-member3.jpg"
-                alt="Игорек"
-                class="team__img"
-              />
+            <picture>
+                <source srcset="./images/team3d.jpg 1x, ./images/team3d@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="270px"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team3t.jpg 1x, ./images/team3t@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="354px"
+                media="(min-width: 768px) and (max-width: 1199px)"/>
+                <source srcset="./images/team3m.jpg 1x, ./images/team3m@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="450px"
+                media="(min-width: 480px)"/>                  
+                <img
+                  src="./sass/images/mob-member3.jpg"
+                  alt="Игорек"
+                  class="team__img"
+                />
+            </picture>
               <div class="team__card">
                 <h3 class="team__heading">Николай Тарасов</h3>
                 <p class="team__discription">Marketing</p>
@@ -317,11 +361,25 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                src="./sass/images/mob-member4.jpg"
-                alt="Игорек"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="./images/team4d.jpg 1x, ./images/team4d@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="270px"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team4t.jpg 1x, ./images/team4t@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="354px"
+                media="(min-width: 768px) and (max-width: 1199px)"/>
+                <source srcset="./images/team4m.jpg 1x, ./images/team4m@2x.jpg 2x"
+                type="image/jpeg"
+                sizes="450px"
+                media="(min-width: 480px)"/>    
+                <img
+                  src="./sass/images/mob-member4.jpg"
+                  alt="Игорек"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__heading">Михаил Ермаков</h3>
                 <p class="team__discription">UI Designer</p>

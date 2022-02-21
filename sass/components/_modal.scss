@@ -41,15 +41,12 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     height: 581px;
   }
 }
-
 .modal__form .modal__item:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .modal__form .modal__list {
   margin-bottom: 10px;
 }
-
 .modal__heading {
   color: #212121;
   text-align: center;
@@ -64,12 +61,10 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     line-height: calc(23 / 20);
   }
 }
-
 .modal__svg-position {
   display: block;
   position: relative;
 }
-
 .modal__input,
 .modal__textarea {
   width: 100%;
@@ -87,7 +82,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
-
 .modal__textarea {
   width: 100%;
   height: 120px;
@@ -100,7 +94,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.01em;
   }
 }
-
 .modal__label {
   display: block;
   margin-bottom: 4px;
@@ -108,7 +101,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 14px;
   letter-spacing: 0.01em;
 }
-
 .modal__agreemantLabel {
   @extend .modal__label;
   display: inline-block;
@@ -117,7 +109,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     line-height: calc(24 / 14);
   }
 }
-
 .modal__file {
   @extend .modal__label;
   color: #2196f3;
@@ -128,20 +119,17 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     line-height: calc(24 / 14);
   }
 }
-
 .modal__svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
 }
-
 .backdrop.is-hidden2 {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-
 .modal__btn {
   width: 30px;
   height: 30px;
@@ -162,13 +150,14 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2196f3;
   }
 }
-
 .modal__submit {
   @extend .btn;
   margin-right: auto;
   margin-left: auto;
+  &:hover, &:focus{
+    background: #188CE8;
+  }
 }
-
 .modal__custom {
   width: 16px;
   height: 15px;
@@ -177,7 +166,6 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: content-box;
   margin-right: 8px;
 }
-
 .agree {
   @extend .visually-hidden;
   &:checked + .modal__custom {
@@ -186,13 +174,11 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
     fill: white;
   }
 }
-
 .modal__policyLabel {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.modal__policy{
+.modal__policy {
     margin-bottom: 30px;
 }
