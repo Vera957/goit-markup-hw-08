@@ -30,14 +30,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    height: 622px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
-    height: 536px;
     &:nth-of-type(2n-1) {
       margin-right: 30px;
     }
@@ -47,7 +45,6 @@
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
-    height: 428px;
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -56,7 +53,6 @@
 .team__img {
   width: 100%;
   display: block;
-  margin-bottom: 30px;
 }
 .team__linkList {
   @extend %social-link-list-geometry;
@@ -80,4 +76,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+.team__card{
+  padding-top: 30px;
+  padding-bottom: 24px;
+   @media screen and (min-width: 1200px) {
+     padding-bottom: 30px;
+  }
 }

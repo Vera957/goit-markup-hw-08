@@ -13,15 +13,12 @@
   display: flex;
 }
 .work__item {
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
-}
-.work__link{
-    display: block;
     width: 100%;
     height: 100%;
     position: relative;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
 }
 .work__img{
     display: block;
