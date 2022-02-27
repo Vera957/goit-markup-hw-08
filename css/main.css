@@ -561,22 +561,6 @@ address {
   }
 }
 
-body {
-  background-color: crimson;
-}
-
-@media screen and (min-width: 350px) {
-  body {
-    background-color: slateblue;
-  }
-}
-
-@media screen and (min-width: 580px) {
-  body {
-    background-color: moccasin;
-  }
-}
-
 /** @format */
 .hero {
   margin-left: auto;
